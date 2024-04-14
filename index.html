@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song/Album Search</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/spotify.css" rel="stylesheet" />
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <h1>Search anything that's on spotify - Let's search the music </h1>
+    <div class="wrapper">
+        <div class="searchbar">
+            <!-- form to get the queries from user -->
+    <form >
+        <label for="query">Enter Song/Album:</label><br>
+        <input type="text" id="query"  class="search" required><br><br>
+        
+        <label for="type">Select Type:</label><br>
+        <select id="type" name="type" class="type" >
+            <option value="tracks"> Mix and Match</option>
+            <option value="tracks">Tracks</option>
+            <option value="albums">Albums</option>
+            <option value="artists">Artists</option>
+            <option value="episodes">Episodes</option>
+            <option value="playlists">Playlists</option>
+            <option value="podcasts">Podcasts</option>
+        </select><br><br>
+        
+        <button class="Submit">Search</button>
+    </form>
+</div>
+<!--  display results here dynamically using  javascript -->
+    <div class="results">
+        <section class="section">
+
+        </section>
+    </div>
+</div>
+</body>
+</html>
