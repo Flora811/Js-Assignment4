@@ -23,9 +23,13 @@ StudentInfo = document.createElement("p");
 StudentInfo.textContent = "Student Name: Flora Bhatt, Student ID: 200534094";
 document.body.appendChild(StudentInfo);
 // adding the site and link of the api that i used 
+apiLink = document.createElement("p");
 apiInfo = document.createElement("p");
-apiInfo.textContent = "Link : https://rapidapi.com/UnlimitedAPI/api/spotify-web2 <br> It is a free api from the Rapid Api Website";
+
+apiInfo.textContent = "It is a free api from the Rapid Api Website";
+apiLink.textContent = "Link : https://rapidapi.com/UnlimitedAPI/api/spotify-web2 ";
 document.body.appendChild(apiInfo);
+document.body.appendChild(apiLink);
 // define our fetch result - fetchRes function
 function fetchRes(event) {
     event.preventDefault();
